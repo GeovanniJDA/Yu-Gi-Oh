@@ -92,7 +92,7 @@ async function setCardField(cardId) {
     await hiddenCardDetails();
 
     await drawCardsInField(cardId, computerCardId);
-    
+
     let duelResults = await checkDuelResults(cardId, computerCardId);
 
     await updateScore();
@@ -204,6 +204,10 @@ function init(){
 
   drawCards(5, playersSides.player1);
   drawCards(5, playersSides.computer);
+
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.4;
+  bgm.play();
 }
 
 init();
