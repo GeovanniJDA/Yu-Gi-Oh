@@ -89,7 +89,6 @@
   flex-direction: column;
   padding-top: .2rem;
   height: 300px; 
-  margin-top: 5rem;
 }
 
 .versus-top,
@@ -97,6 +96,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.versus-top{
+  gap: 2rem;
 }
 
 .versus-bottom{
@@ -119,6 +122,8 @@
 .card-infield{
   height: 11.2rem;
   width: 8rem;
+  border: 1px solid #FFF;
+  border-radius: 8px;
 }
 
 .card{
